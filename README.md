@@ -42,10 +42,10 @@ if __name__ == "__main__":
     manager = SecureCredentialManager()
     
     # User registration phase
-    raw_password = "SuperSecurePassword123!"
+    raw_password = "Banana"
     secure_hash = manager.hash_credential(raw_password)
     print(f"Generated Hash: {secure_hash}")
     
     # Login verification phase
-    is_valid = manager.verify_credential(secure_hash, "SuperSecurePassword123!")
+    is_valid = manager.verify_credential(secure_hash, "Banana")
     print(f"Verification Result: {is_valid}")
